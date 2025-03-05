@@ -1,0 +1,33 @@
+!git clone https://github.com/thusimon/web-court.git
+
+!pip install ultralytics==8.2.2
+!pip install tensorflowjs==4.19.0
+!pip install tensorflow-decision-forests==1.8.1
+!pip install tensorflow==2.13.1
+
+!pip list
+
+%cd /content/web-court
+!python tf/data-prep-yolo8.py
+
+'''
+addestra
+'''
+%cd /content/web-court/tf/yolo/
+!python yolo.py --target=train --train-model-size=m --train-epoch=50 --config=config-colab.yaml
+
+#facoltativo
+%cd /content/web-court/tf/yolo/
+!python yolo.py --target=validate --model-folder=train --config=config-colab.yaml
+
+#facoltativo
+%cd /content/web-court/tf/yolo/
+!python yolo.py --target=predict --model-folder=train
+
+'''
+converto il modello in formato tensorflow.js
+'''
+!python yolo.py --target=convert-tfjs --model-folder=train
+
+%cd /content/web-court/tf/yolo/
+!zip -r yolov8-tfjs.zip ./login_detect/train/weights/best_web_model/

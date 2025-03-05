@@ -1,0 +1,11 @@
+scheda-punti-numero-1
+scheda-testo-1
+scheda-testo-0
+scheda-numerone-1
+scheda-puntata-numero-2
+scheda-testo-2
+scheda-testo-3
+scheda-testo-2.1
+scheda-1
+scheda-2
+scheda-punti-numero-0

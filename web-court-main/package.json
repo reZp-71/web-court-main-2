@@ -1,0 +1,62 @@
+{
+  "name": "web-court",
+  "version": "0.0.1",
+  "description": "Extract feature of web page and classify it",
+  "repository": "https://github.com/thusimon/web-court",
+  "author": "Lu",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "private": true,
+  "scripts": {
+    "build.chrome.dev": "npx webpack --config webpack.config.js --env --browser=chrome --env --build=dev --env --model=yolov8m",
+    "build.chrome.prod": "npx webpack --config webpack.config.js --env --browser=chrome --env --build=prod --env --model=yolov8m",
+    "build.firefox.dev": "npx webpack --config webpack.config.js --env --browser=firefox --env --build=dev --env --model=yolov8m",
+    "build.firefox.prod": "npx webpack --config webpack.config.js --env --browser=firefox --env --build=prod --env --model=yolov8m",
+    "jest": "jest",
+    "lint": "web-ext --source-dir src lint"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.19.0",
+    "@webcomponents/webcomponentsjs": "^2.7.0",
+    "html2canvas": "^1.4.1",
+    "idb": "^7.1.1",
+    "lit": "^2.6.1",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "simple-statistics": "^7.8.3",
+    "webextension-polyfill": "^0.10.0",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/lodash": "^4.14.191",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/webextension-polyfill": "^0.10.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.36.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.5.0",
+    "mini-css-extract-plugin": "^2.7.3",
+    "sass": "^1.59.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^29.0.5",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "web-ext": "^7.5.0",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "yargs": "^17.7.2"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "resolutions": {
+    "jest/**/jsdom": "^19.0.0"
+  }
+}

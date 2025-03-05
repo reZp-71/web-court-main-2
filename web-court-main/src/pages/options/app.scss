@@ -1,0 +1,34 @@
+body {
+  border: 1px solid bisque;
+
+  .options-main {
+    .section {
+      display: flex;
+      flex-direction: column;
+    }
+    .downloads {
+      div {
+        margin: 8px 0px;
+      }
+      .folder {
+        input {
+          width: 50%;
+        }
+      }
+      .range {
+        input {
+          width: 64px;
+          margin: 0px 8px;
+        }
+      }
+    }
+    .native-messaging {
+      * {
+        margin: 3px 0px;
+      }
+      textarea {
+        height: 200px;
+      }
+    }
+  }
+}

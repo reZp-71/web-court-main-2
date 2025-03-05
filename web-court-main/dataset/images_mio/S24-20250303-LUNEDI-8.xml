@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images_mio</folder>
+	<filename>S24-20250303-LUNEDI-8.png</filename>
+	<path>C:\Users\ZITREN00\OneDrive - IL Sole 24 Ore SpA\Documenti\test-schede\web-court-main\web-court-main\dataset\images_mio\S24-20250303-LUNEDI-8.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1429</width>
+		<height>1680</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>scheda-testo-0</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>82</xmin>
+			<ymin>138</ymin>
+			<xmax>706</xmax>
+			<ymax>1650</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>scheda-testo-0</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>708</xmin>
+			<ymin>140</ymin>
+			<xmax>1332</xmax>
+			<ymax>1652</ymax>
+		</bndbox>
+	</object>
+</annotation>
