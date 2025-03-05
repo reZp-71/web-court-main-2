@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images_mio</folder>
+	<filename>S24-20250305-SOLE 20.png</filename>
+	<path>C:\Users\ZITREN00\OneDrive - IL Sole 24 Ore SpA\Documenti\test-schede\web-court-main\web-court-main\dataset\images_mio\S24-20250305-SOLE 20.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2492</width>
+		<height>3256</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>scheda-testo-2.1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>40</ymin>
+			<xmax>591</xmax>
+			<ymax>1043</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>scheda-numerone-1</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1921</xmin>
+			<ymin>2434</ymin>
+			<xmax>2446</xmax>
+			<ymax>3222</ymax>
+		</bndbox>
+	</object>
+</annotation>
